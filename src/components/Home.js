@@ -1,6 +1,8 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 
+// using the Redirect component
+
 function Home({ isLoggedIn }) {
   if (!isLoggedIn) return <Redirect to="/login" />;
 
